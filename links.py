@@ -92,3 +92,8 @@ class Links:
         self.browser.close()
 
         return set(links)
+
+if __name__ == '__main__':
+    i = Links()
+    links = i.collect('cats')
+    print(len(links), links)
