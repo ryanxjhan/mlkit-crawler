@@ -114,3 +114,7 @@ class GoogleImageCrawler:
             keywords = sorted(set(lines))
 
         return keywords
+
+if __name__ == '__main__':
+    crawler = GoogleImageCrawler()
+    crawler.crawl()
